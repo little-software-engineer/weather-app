@@ -1,0 +1,9 @@
+<a href="https://www.flaticon.com/free-icons/sun" title="sun icons">Sun icons created by iconixar - Flaticon</a>    CLOUDY
+<a href="https://www.flaticon.com/free-icons/rain" title="rain icons">Rain icons created by iconixar - Flaticon</a>   DRIZZLE
+<a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Royyan Wijaya - Flaticon</a> SEARCH
+<a href="https://www.flaticon.com/free-icons/rain" title="rain icons">Rain icons created by tulpahn - Flaticon</a> RAIN
+<a href="https://www.flaticon.com/free-icons/mist" title="mist icons">Mist icons created by Freepik - Flaticon</a> MIST
+<a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by Freepik - Flaticon</a> CLEAR
+<a href="https://www.flaticon.com/free-icons/frost" title="frost icons">Frost icons created by Hexagon075 - Flaticon</a> SNOW
+<a href="https://www.flaticon.com/free-icons/wind" title="wind icons">Wind icons created by Good Ware - Flaticon</a> WIND
+<a href="https://www.flaticon.com/free-icons/humidity" title="humidity icons">Humidity icons created by adriansyah - Flaticon</a> HUMIDITY
