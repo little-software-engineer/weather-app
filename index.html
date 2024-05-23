@@ -23,7 +23,7 @@
       <h3 class="description">clear sky</h3>
       <h1 class="city">Milan</h1>
       <h3 class="date-time">Thu, 23 May 2024 09:34:55 GMT</h3>
-     
+
 
       <div class="details">
         <div class="col">
@@ -64,15 +64,15 @@
 
 
     function getDate(dt, timezone) {
-            // Ensure both dt and timezone are integers
-            const utc_seconds = parseInt(dt, 10) + parseInt(timezone, 10);
-            // Convert to milliseconds
-            const utc_milliseconds = utc_seconds * 1000;
-            // Create a Date object with the correct milliseconds
-            const local_date = new Date(utc_milliseconds);
-            // Format the time to show only hours and minutes
-            return local_date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        }
+
+      const utc_seconds = parseInt(dt, 10) + parseInt(timezone, 10);
+
+      const utc_milliseconds = utc_seconds * 1000;
+
+      const local_date = new Date(utc_milliseconds);
+
+      return local_date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
 
     async function checkWeather(city) {
       const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
