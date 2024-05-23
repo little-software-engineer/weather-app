@@ -62,7 +62,6 @@
     const weatherIcon = document.querySelector(".weather-icon");
 
 
-
     function getDate(dt, timezone) {
 
       const utc_seconds = parseInt(dt, 10) + parseInt(timezone, 10);
@@ -71,9 +70,14 @@
 
       const local_date = new Date(utc_milliseconds);
 
-      return local_date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    }
+      const formatted_date = local_date.toLocaleDateString();
 
+      const timezone_offset_hours = timezone / 3600;
+
+      const timezone_string = `UTC${timezone_offset_hours >= 0 ? '+' : ''}${timezone_offset_hours}`;
+
+      return `${formatted_date} (${timezone_string})`;
+    }
     async function checkWeather(city) {
       const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
