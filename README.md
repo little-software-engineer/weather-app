@@ -16,6 +16,7 @@ Welcome to the Weather App! This web application provides current weather inform
 - **HTML**: Provides the structure and content of the app.
 - **CSS**: Styles the application, ensuring a visually appealing and responsive design.
 - **OpenWeather API**: Supplies the weather data used in the application.
+- Inspired by: https://www.youtube.com/watch?v=MIYQR-Ybrn4 
 
 ## How to Use
 
