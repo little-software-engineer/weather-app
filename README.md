@@ -25,3 +25,10 @@ Welcome to the Weather App! This web application provides current weather inform
     git clone https://github.com/your-username/weather-app.git
     cd weather-app
     ```
+
+2. **Open `index.html` in your web browser**:
+    Simply open the `index.html` file in your preferred web browser to start using the app.
+
+3. **Enter a city name**:
+    Use the search bar to enter the name of the city you want to check the weather for, and click the search button.
+
