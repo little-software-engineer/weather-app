@@ -99,8 +99,24 @@
         document.querySelector(".humidity").innerHTML =
           data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
-        document.body.style.backgroundImage =
-          "url('https://source.unsplash.com/1600x900/?" + data.name + "')";
+        //background image section of the code
+        const apiKey = 'your-api-key-2';
+        const city = data.name;
+
+        fetch(`https://api.pexels.com/v1/search?query=${city}&per_page=1`, {
+          headers: {
+            Authorization: apiKey
+          }
+        })
+          .then(response => response.json())
+          .then(result => {
+            const imageUrl = result.photos[0].src.landscape;
+            document.body.style.backgroundImage = `url('${imageUrl}')`;
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+          })
+          .catch(error => console.error('Error fetching the image:', error));
 
         if (data.weather[0].main == "Clouds") {
           weatherIcon.src = "images/clouds.png";
